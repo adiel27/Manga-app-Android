@@ -1,11 +1,93 @@
-# Sample Snack app
+# 📖 Manga Reader App
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Aplikasi **React Native/Expo** untuk membaca manga dan light novel dengan fitur lengkap: zoom, pan, swipe, bookmark, offline save, dan history tracking.  
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+---
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+## 🚀 Features
+- 📑 **Page Viewer**  
+  - Zoom, pan, swipe gesture untuk membaca manga dengan nyaman.  
+  - Tombol navigasi Prev/Next.  
+  - Simpan chapter ke **offline storage**.  
+  - Tambah manga ke **bookmark**.  
+  - Auto-save ke **history** setiap kali pindah halaman.  
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+- ⭐ **Bookmark Screen**  
+  - Simpan manga favorit.  
+  - Tampilkan judul, cover, dan tanggal disimpan.  
+  - Hapus bookmark langsung dari daftar.  
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+- 🕒 **History Screen**  
+  - Catat manga terakhir dibaca.  
+  - Simpan posisi halaman terakhir.  
+  - Lanjutkan membaca dari halaman terakhir.  
+  - Clear history dengan satu tombol.  
+
+---
+
+## 🛠 Tech Stack
+- **React Native** (Expo)  
+- **TypeScript**  
+- **AsyncStorage** untuk penyimpanan lokal  
+- **expo-file-system** untuk offline save  
+- **react-native-image-pan-zoom** untuk zoom & pan gambar  
+- **react-navigation** untuk navigasi antar screen  
+
+---
+
+## 📂 Project Structure
+```
+src/
+ ├── screens/
+ │    ├── PageViewer.tsx
+ │    ├── BookmarkScreen.tsx
+ │    └── HistoryScreen.tsx
+ ├── components/
+ ├── navigation/
+ └── App.tsx
+```
+
+---
+
+## ⚙️ Installation
+1. Clone repo:
+   ```bash
+   git clone https://github.com/username/manga-reader-app.git
+   cd manga-reader-app
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run app:
+   ```bash
+   expo start
+   ```
+
+---
+
+## 📌 Usage
+- Buka manga dari API/local storage → otomatis masuk ke **PageViewer**.  
+- Tekan ⭐ untuk menambahkan ke **Bookmark**.  
+- Bookmark bisa dilihat di **BookmarkScreen**.  
+- History otomatis tersimpan setiap kali pindah halaman → bisa dilihat di **HistoryScreen**.  
+
+---
+
+## 🗑 Known Issues
+- Judul `"Unknown Title"` muncul kalau `title` tidak dikirim saat navigate. Pastikan screen asal selalu mengirim `title`.  
+- Bookmark duplikat dicegah dengan cek `mangaId + chapterId` atau `title + pages.length`.  
+
+---
+
+## 🤝 Contributing
+Pull request welcome! Pastikan kode rapi dan konsisten dengan TypeScript + ESLint.  
+
+---
+
+## 📜 License
+MIT License.  
+
+---
+
+Dek, mau aku tambahin juga **screenshot demo** (misalnya tampilan PageViewer, Bookmark, History) ke README biar lebih menarik?
