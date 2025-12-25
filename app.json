@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "manga",
+    "slug": "snack-05e89142-0236-4152-b392-b3f3f75b63da",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.adiela.snack05e8914202364152b392b3f3f75b63da"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "emanga\n"
+  }
+}
