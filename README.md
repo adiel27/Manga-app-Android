@@ -87,7 +87,3 @@ Pull request welcome! Pastikan kode rapi dan konsisten dengan TypeScript + ESLin
 
 ## 📜 License
 MIT License.  
-
----
-
-Dek, mau aku tambahin juga **screenshot demo** (misalnya tampilan PageViewer, Bookmark, History) ke README biar lebih menarik?
