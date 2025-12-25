@@ -52,7 +52,7 @@ src/
 ## ⚙️ Installation
 1. Clone repo:
    ```bash
-   git clone https://github.com/username/manga-reader-app.git
+   git clone https://github.com/adiel27/manga-reader-app.git
    cd manga-reader-app
    ```
 2. Install dependencies:
